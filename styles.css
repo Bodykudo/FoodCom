@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  cursor: url("img/defaultCursor.png"), auto;
+  --mainColor: #ff4646;
+  --searchColor: #f4c82b;
+  --topColor: #e5f2b9;
+  --searchBarColor: #bbde5f;
+  --navColor: #f4c82b;
+  --linkColor: #5d12e7;
+}
+
+a:hover {
+  cursor: url("img/pointerCursor.png"), auto;
+}
+
+body {
+  width: 1070px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+header {
+  height: 120px;
+  padding: 10px 0;
+}
+
+header h1 {
+  display: inline;
+  position: relative;
+  top: 15%;
+}
+
+h1 a {
+  font-size: 50px;
+  font-weight: 100;
+  color: var(--mainColor);
+  text-decoration: none;
+  float: left;
+}
+
+.search {
+  float: right;
+  position: relative;
+  background: linear-gradient(var(--topColor), var(--searchBarColor));
+  width: 420px;
+  height: 60px;
+  padding: 20px 20px 0 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.searchText {
+  float: left;
+  position: relative;
+  bottom: 5px;
+  padding: 5px;
+  font-size: 15px;
+  color: var(--searchColor);
+  background: white url(img/searchIcon.png) right center no-repeat;
+  border-radius: 10px;
+  border: 1px solid var(--navColor);
+}
+
+.searchButton {
+  float: right;
+  position: relative;
+  bottom: 5px;
+  padding: 5px;
+  font-weight: bold;
+  color: white;
+  background: var(--mainColor);
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav {
+  height: 85px;
+  background: linear-gradient(var(--topColor), var(--navColor));
+  padding: 7.5px 0;
+  border-radius: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  float: left;
+  padding: 0 20px;
+  height: 30px;
+  border-right: 1px solid var(--linkColor);
+  line-height: 30px;
+}
+
+nav ul li:last-child {
+  border: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: var(--linkColor);
+}
+
+nav ul li a:hover,
+.current {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--mainColor);
+  transition: 0.3s ease;
+}
+
+main article {
+  background: linear-gradient(var(--topColor), var(--searchBarColor));
+  padding: 30px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+main article h2 {
+  font-size: 45px;
+  color: #316901;
+  font-weight: normal;
+}
+
+main article p {
+  font-size: 25px;
+  color: #628f19;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+main aside {
+  height: 500px;
+  width: 510px;
+  margin-top: 10px;
+  border: 1px solid var(--searchBarColor);
+  border-radius: 10px;
+  font-weight: normal;
+  padding: 10px 30px;
+}
+
+main aside h3 {
+  color: var(--mainColor);
+  font-size: 30px;
+}
+
+main aside ul {
+  list-style: url("img/knifeIcon.png");
+  padding-top: 8px;
+}
+
+main aside ul .meat {
+  list-style: url("img/meatIcon.png");
+}
+
+main aside ul .chicken {
+  list-style: url("img/chickenIcon.png");
+}
+
+main aside ul .vegan {
+  list-style: url("img/veganIcon.png");
+}
+
+main aside ul .seafood {
+  list-style: url("img/seafoodIcon.png  ");
+}
+
+main aside ul li a,
+main aside ul li {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--linkColor);
+}
+
+main aside ul li a:hover {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--mainColor);
+  transition: 0.3s ease;
+}
+
+main aside.left {
+  float: left;
+}
+
+main aside.right {
+  float: right;
+}
+
+main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer {
+  margin: 10px 0;
+  text-align: center;
+  padding: 20px 0;
+  background: linear-gradient(var(--topColor), var(--navColor));
+  border-radius: 10px;
+}
