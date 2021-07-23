@@ -1,3 +1,5 @@
+/* Global */
+
 * {
   box-sizing: border-box;
   cursor: url("img/defaultCursor.png"), auto;
@@ -18,6 +20,26 @@ body {
   margin: 0 auto;
   padding: 0 10px;
 }
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  outline: 0;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--searchBarColor);
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Header */
 
 header {
   height: 120px;
@@ -80,6 +102,8 @@ header::after {
   clear: both;
 }
 
+/* Navigation */
+
 nav {
   height: 85px;
   background: linear-gradient(var(--topColor), var(--navColor));
@@ -117,6 +141,8 @@ nav ul li a:hover,
   color: var(--mainColor);
   transition: 0.3s ease;
 }
+
+/* Main Article and Side Articles */
 
 main article {
   background: linear-gradient(var(--topColor), var(--searchBarColor));
@@ -201,6 +227,8 @@ main::after {
   display: block;
   clear: both;
 }
+
+/* Footer */
 
 footer {
   margin: 10px 0;
