@@ -45,6 +45,10 @@ body {
   outline: none;
 }
 
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(187, 222, 95, 0.6);
+}
+
 /* Header */
 
 header {
